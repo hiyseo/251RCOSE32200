@@ -1,0 +1,39 @@
+[   97.575774] [BTRFS][WRITEPAGES] file=/test inode=257 writeback start
+[   97.575779] [BTRFS][EXTENT_WRITEPAGES] file=/test inode=257 writeback triggered
+[   97.575782] [BTRFS][EXTENT_WRITEPAGE] file=/test inode=257 offset=0
+[   97.575912] [BTRFS][EXTENT_WRITEPAGE] file=/test inode=257 offset=524288
+[   97.575962] [BTRFS][EXTENT_WRITEPAGE] file=/test inode=257 offset=1048576
+[   97.575963] [BTRFS][SUBMIT_EXTENT_PAGE] file=/test inode=257 offset=1048576 size=4096 [type=data]
+[   97.575964] [BTRFS][SUBMIT_ONE_BIO][SYNC] ino=18173366821440341633, sector=26624, size=1048576
+[   97.575965] [BTRFS][SUBMIT_DATA_BIO] inode=257, offset=13631488, size=1048576
+[   97.576026] [BTRFS][EXTENT_WRITEPAGE] file=/test inode=257 offset=1572864
+[   97.576083] [BTRFS][SUBMIT_ONE_BIO][SYNC] ino=18173366821440341633, sector=28672, size=999424
+[   97.576084] [BTRFS][SUBMIT_DATA_BIO] inode=257, offset=14680064, size=999424
+[   97.576217] [BTRFS][MAP_BIO] logical=13631488, len=1048576, op=1, devs=1
+[   97.576220] [BTRFS][STRIPE_BIO] dev=/dev/loop13, devid=1, physical=13631488, bio_sectors=26624, op=1
+[   97.576323] [BTRFS][MAP_BIO] logical=14680064, len=999424, op=1, devs=1
+[   97.576325] [BTRFS][STRIPE_BIO] dev=/dev/loop13, devid=1, physical=14680064, bio_sectors=28672, op=1
+[   99.703187] [BTRFS][SUBMIT_EXTENT_PAGE] inode=1 offset=30474240 size=4096 [type=meta] (no dentry)
+[   99.703220] [BTRFS][SUBMIT_ONE_BIO][SYNC] ino=13009195992709632625, sector=59456, size=32768
+[   99.703349] [BTRFS][MAP_BIO] logical=30441472, len=32768, op=1, devs=2
+[   99.703356] [BTRFS][STRIPE_BIO] dev=/dev/loop13, devid=1, physical=38830080, bio_sectors=59456, op=1
+[   99.703395] [BTRFS][STRIPE_BIO] dev=/dev/loop13, devid=1, physical=146178048, bio_sectors=59456, op=1
+[   99.703407] [BTRFS][SUBMIT_ONE_BIO][SYNC] ino=13009195992709632625, sector=59520, size=16384
+[   99.703420] [BTRFS][MAP_BIO] logical=30474240, len=16384, op=1, devs=2
+[   99.703424] [BTRFS][STRIPE_BIO] dev=/dev/loop13, devid=1, physical=38862848, bio_sectors=59520, op=1
+[   99.703428] [BTRFS][STRIPE_BIO] dev=/dev/loop13, devid=1, physical=146210816, bio_sectors=59520, op=1
+[   99.703445] [BTRFS][SUBMIT_ONE_BIO][SYNC] ino=13009195992709632625, sector=59584, size=16384
+[   99.703515] [BTRFS][MAP_BIO] logical=30507008, len=16384, op=1, devs=2
+[   99.703518] [BTRFS][STRIPE_BIO] dev=/dev/loop13, devid=1, physical=38895616, bio_sectors=59584, op=1
+[   99.703522] [BTRFS][STRIPE_BIO] dev=/dev/loop13, devid=1, physical=146243584, bio_sectors=59584, op=1
+[   99.703548] [BTRFS][SUBMIT_EXTENT_PAGE] inode=1 offset=30670848 size=4096 [type=meta] (no dentry)
+[   99.703551] [BTRFS][SUBMIT_ONE_BIO][SYNC] ino=13009195992709632625, sector=59776, size=65536
+[   99.703665] [BTRFS][MAP_BIO] logical=30605312, len=65536, op=1, devs=2
+[   99.703668] [BTRFS][STRIPE_BIO] dev=/dev/loop13, devid=1, physical=38993920, bio_sectors=59776, op=1
+[   99.703673] [BTRFS][STRIPE_BIO] dev=/dev/loop13, devid=1, physical=146341888, bio_sectors=59776, op=1
+[   99.703682] [BTRFS][SUBMIT_ONE_BIO][SYNC] ino=13009195992709632625, sector=59904, size=16384
+[   99.703694] [BTRFS][MAP_BIO] logical=30670848, len=16384, op=1, devs=2
+[   99.703697] [BTRFS][STRIPE_BIO] dev=/dev/loop13, devid=1, physical=39059456, bio_sectors=59904, op=1
+[   99.703700] [BTRFS][STRIPE_BIO] dev=/dev/loop13, devid=1, physical=146407424, bio_sectors=59904, op=1
+[  128.378485] [BTRFS][WRITEPAGES] file=/test inode=257 writeback start
+[  128.378507] [BTRFS][EXTENT_WRITEPAGES] file=/test inode=257 writeback triggered
