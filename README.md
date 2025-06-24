@@ -104,7 +104,7 @@ done
 
 - 커널 로그 확인: `dmesg | grep [EXT4]` 또는 `[BTRFS]`
 - reflink 사용 여부: `cp --reflink=auto` (Btrfs만 지원)
-- 커널 소스 분석: `/usr/src/linux-5.15/fs/ext4/`, `fs/btrfs/`<br><br>
+- 커널 소스 분석: `/usr/src/linux-5.15/fs/ext4/`, `fs/btrfs/`<br><br><br><br>
 
 # 🛰️ 02 - UDP 리디렉션 성능 비교: Netfilter vs eBPF (XDP)
 
