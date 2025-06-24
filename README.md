@@ -1,6 +1,3 @@
-# 251RCOSE32200
-고려대학교 시스템프로그래밍
-
 # 🧪 EXT4 vs Btrfs: Linux 파일 시스템 Write 실험
 
 본 프로젝트는 Linux 커널 소스에 직접 로그를 삽입하여, EXT4와 Btrfs 파일 시스템의 **쓰기(write)** 동작 차이를 분석한 실험입니다. 특히 Btrfs의 **Copy-on-Write (CoW)** 특성과 EXT4의 전통적인 데이터 복사 방식의 차이를 실질적인 **디스크 I/O 및 inode 동작 관찰**을 통해 비교합니다.
@@ -107,7 +104,11 @@ done
 
 - 커널 로그 확인: `dmesg | grep [EXT4]` 또는 `[BTRFS]`
 - reflink 사용 여부: `cp --reflink=auto` (Btrfs만 지원)
-- 커널 소스 분석: `/usr/src/linux-5.15/fs/ext4/`, `fs/btrfs/`
+- 커널 소스 분석: `/usr/src/linux-5.15/fs/ext4/`, `fs/btrfs/`  
+
+
+
+
 
 # 🛰️ UDP 리디렉션 성능 비교: Netfilter vs eBPF (XDP)
 
